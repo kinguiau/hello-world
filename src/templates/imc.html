@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado IMC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/imc.css') }}">
+</head>
+<body>
+    <main>
+        <div class="result-container show">
+            <h3>Resultado do IMC</h3>
+            <p>Peso: {{ peso }} kg</p>
+            <p>Altura: {{ altura }} m</p>
+            <h2>{{ imc }}</h2>
+            <p>Classificação: {{ classificacao }}</p>
+            <a href="{{ url_for('index') }}" class="back-button">Voltar</a>
+        </div>
+    </main>
+</body>
+</html>

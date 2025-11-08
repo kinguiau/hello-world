@@ -2,9 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Erro - Operação Inválida</title>
+    <title>Erro - Cálculo de IMC</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/math.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='icons/favicon.ico') }}">
 </head>
 <body>
@@ -15,8 +14,9 @@
             <a href="/profile">Perfil</a>
         </nav>
     </header>
+
     <main>
-        <div class="result-container show"> <!-- Adicionando a classe 'show' para garantir a visibilidade -->
+        <div class="result-container show">
             <h3>Erro {{ status_code }}</h3>
             <p>{{ error_message }}</p>
             <br>
